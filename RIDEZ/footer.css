@@ -1,0 +1,86 @@
+/*--------------------------------------------------------------footer----------------------------------------------------------------------*/
+
+.footer{
+    position: relative;
+	top:78vh;
+	bottom: 0;
+    float: right;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#A5A5A5;
+	margin:0;
+	background-color:rgb(0, 0, 0);
+}
+.footer-content{/* footer main div css */
+	display: flex;
+	flex-direction: row;
+}
+.no-bullet{
+	list-style-type:none;
+	padding-left: 0;
+}
+ a {
+	text-decoration: none;
+	color: #A5A5A5;
+}
+ a:hover {/* all anchors on hover */
+	text-decoration: none;
+	color: white;
+}
+.text-left{
+	text-align: left ;
+}
+.justify-text{
+	text-align: justify;
+}
+.footer-img{
+	text-align: center;
+	width: 20%;
+}
+.footer-navigation{
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+	
+}
+.footer-about{/* about section in footer */
+	width: 45%;
+}
+.footer-contact{/* contact section in footer */
+	text-align: right;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+}
+.footer-hr{
+	color: white;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+}
+
+.page-credits{/* page credits section */
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.footer .additional .additional-content{/* additional content section */
+	position: relative;
+	text-align: center;
+	left: 35%;
+	margin-bottom: 5px;
+	margin-top: 15px;
+	font-size: 24px;
+	background-color: white;
+	border-radius: 50px;
+	width:30%;
+}
+
+#additional-content:hover{
+	color: black;
+
+}

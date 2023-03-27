@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #827e7e;
+}
+.main_head {
+	color: #fff;
+    font-family: 'Dancing Script','cursive;';
+	margin: auto;
+	width: 100%;
+	padding: 30px 0 0 0;
+    font-size: 50px;
+	text-align: center;
+	text-shadow: 2px 2px #060606;
+	z-index: 4;
+}
+.box {
+	position: relative;
+	width: 210px;
+	height: 210px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px;
+	background: #000000;
+	border-radius: 20px;
+	border: transparent;
+	transition: all 0.5s ease;
+}
+.box .image_box {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.box:hover {
+	height: 350px;
+	cursor: pointer;
+}
+
+.box .image_box img{
+	max-width: 100%;
+	opacity: 0.1;
+	transition: 0.5s;
+    opacity: 1;
+	cursor: pointer;
+	border-radius: 5%;
+	height: fit-content;
+}
+
+.box:after{
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	right: -1px;
+	bottom: -1px;
+	background: rgb(80, 176, 235);
+	z-index: -1;
+	filter: blur(30px);
+}
+
+.box .info{
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	height: 100px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.box:hover .info{
+	opacity: 1;
+}
+
+.box .info h2 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.box .info h2 span {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+.back-video{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 1;
+}
+/*--------------------------------------------------------------footer----------------------------------------------------------------------*/
+.footer{
+	position: absolute;
+	bottom: 0;
+	float: right;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#A5A5A5;
+	margin:0;
+	background-color:rgb(0, 0, 0);
+
+}
+.footer-content{/* footer main div css */
+	display: flex;
+	flex-direction: row;
+}
+.no-bullet{
+	list-style-type:none;
+	padding-left: 0;
+}
+ a {
+	text-decoration: none;
+	color: #A5A5A5;
+}
+ a:hover {/* all anchors on hover */
+	text-decoration: none;
+	color: white;
+}
+.text-left{
+	text-align: left ;
+}
+.justify-text{
+	text-align: justify;
+}
+.footer-img{
+	text-align: center;
+	width: 20%;
+}
+.footer-navigation{
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+	
+}
+.footer-about{/* about section in footer */
+	width: 45%;
+}
+.footer-contact{/* contact section in footer */
+	text-align: right;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+}
+.footer-hr{
+	color: white;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+}
+.social-row{/* social media row */
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.footer-icon{/* social media icons */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.page-credits{/* page credits section */
+	text-align: center;
+	margin-bottom: 0;
+}
+

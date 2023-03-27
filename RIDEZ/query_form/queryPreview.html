@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDEZ | Query Preview</title>
+
+    <!--Linking the page icon-->
+    <link rel="icon" href="query_form_assets/RidezPageIcon.png">
+
+    <!--Linking with query form stylesheet-->
+    <link rel="stylesheet"  href="queryForm.css">
+
+    <!--Linking with the javascript file-->
+    <script defer src="./queryPreview.js"></script>
+
+    <!--Linking the background video-->
+    <video autoplay muted loop id="cinematic-main">
+        <source src="query_form_assets/HomePageVid.mp4">
+    </video>
+    <!--Linking with navigation bar stylesheet-->
+    <link rel="stylesheet"  href="header.css">
+
+    <!--Linking with footer stylesheet-->
+    <link rel="stylesheet"  href="footer.css">
+    
+</head>
+
+<body>
+    <!-- All navigation bar contents -->
+    <nav>
+        <a href="../home.html">
+            <img class= "logo" src="query_form_assets/RidezLogoWhite.png" alt="RIDEZLogo">
+            </a>
+            <!--menu items-->          
+            <ul>
+              <li><a href="../home.html">HOME</a></li>
+              <li><a href="../PresentationPage and Shop/store.html">SHOP</a></li>
+              <li><a href="queryForm.html" class="selected">QUERY FORM</a></li>
+              <li><a href="../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+              <li><a href="../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+              <li><a href="../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+              <li><a href="../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+            </ul>
+    </nav>
+    <!-- End of all navigation bar contents -->
+    
+    <!-- Starting query form -->
+    <div class="container">
+        <div>
+            <img src="query_form_assets/RidezLogoWhite.png" alt="RIDEZ Logo" id="RidezLogo" width="100">
+        </div>
+        <div class ="form">
+            <div class="title">
+                Query Form
+            </div>
+            <div class="query-preview">
+                <h2>Name: <span class="preview" id="name-preview"></span></h2>
+	            <h2>Email: <span class="preview" id="email-preview"></span></h2>
+	            <h2>Subject: <span class="preview" id="subject-preview"></span></h2>
+	            <h2>Message: <span class="preview" id="message-preview"></span></h2>
+            </div>
+            <div class="submit-box">
+                <input type="reset" class="button" value="Edit" onclick="edit()" >
+                <input type="submit" class="button" value="Send" onclick="send()" >
+            </div>
+        </div>
+
+    </div>
+    <!-- End of query form -->
+
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-img">
+            <!-- website logo in footer -->
+            <a href="../home.html">
+            <img src="query_form_assets/RidezLogoWhite.png" alt="footer logo" width="55%" role="img" aria-label="link to home page"/></a>
+          </div>
+          <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+            <h2>Navigation</h2>
+            <!-- footer navigation -->
+            <ul class="no-bullet">
+              <li><a href="../home.html">HOME</a></li>
+              <li><a href="../PresentationPage and Shop/store.html">SHOP</a></li>
+              <li><a href="queryForm.html" >QUERY FORM</a></li>
+              <li><a href="../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+              <li><a href="../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+              <li><a href="../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+              <li><a href="../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <div class="footer-about">
+            <!-- footer about area -->
+            <h2>About Us</h2>
+            <p class="justify-text">
+              We created this website for our course work in web module.
+              <br/>
+              This site contains information about bicycles in the world,
+              with detailed descriptions and images which will help you to decide which
+              bicycles suitable for you to choose.
+              <br/>
+              Also we have some unique, quality products made all around the world
+              for the lowest rates.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <!-- footer contact info -->
+            <h2><strong>Contact Info</strong></h2>
+            <p>
+              +94 783054058 <br /><br />
+              RIDEZ <br />
+              No 197/8, <br />
+              Galle Road,<br />
+              Galle.
+            </p>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-content">
+        </div>
+        <hr class="footer-hr">
+        <!-- page credits-link to page editor page -->
+        <p class="page-credits">Created by <a href="Pageeditor.html">Niluksha Akmeemana</a></p>
+    </div>
+</body>
+</html>

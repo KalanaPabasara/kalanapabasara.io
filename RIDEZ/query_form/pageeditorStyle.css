@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@1,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightgray
+}
+.main_head{
+	color: #fff;
+    font-family: 'Dancing Script','cursive;';
+	margin: auto;
+	width: 100%;
+	text-align: center;
+    text-shadow: 2px 2px #060606;
+    margin-top:100px;
+    font-size: 50px;
+}
+.line_row{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.student_details {
+    height: auto;
+	width: 350px;
+	margin-top: 100px;
+	background: #f8faff;
+	padding: 30px;
+	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.35);
+	border-radius: 15px;
+	margin-left: 50px;
+	float: left;
+	transition: 0.5s;
+	transition: transform 0.3s;
+}
+
+.student_details:hover {
+	background: #f85959;
+    color: white;
+    transform:scale(1.1);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.35);
+    transform: scale(1.1); 
+}
+            
+.image{
+	margin-left: 30px;
+	margin-top: 100px;
+    float: right;
+}
+
+img{
+	height: 300px;
+    width: 300px;
+    border-radius: 20%;
+    transition: transform 0.5s;
+}
+h3{
+	font-size: 28px;
+    font-weight: 600;
+}
+
+h4{
+	font-size: 20px;
+    font-weight: 600;
+}
+
+.tasks{
+	font-weight: 600;
+}
+
+p{
+    margin: 0;
+	font-weight: 300;
+}
+.student_details .button{
+    text-decoration: none;
+    background-color:#21D4FD;
+    color:white;
+    border-radius:40px;
+    padding:10px 10px;
+    font-size:1.2em;
+    font-weight:bold;
+    float: right;
+    cursor: pointer;
+}

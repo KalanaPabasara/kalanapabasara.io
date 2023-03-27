@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="shop_assets/RidezPageIcon.png">
+        <title>
+            Invoice
+        </title>
+        
+        <link rel="stylesheet" href="storeInvoice.css">
+        
+    </head>
+    <body>
+        <a id="backTo" href="store.html">Back to shop</a><br><br>
+        <div id="invoiceContent">
+            <div class="invoice-box">
+                <h2 class="section-header">-INVOICE-</h2>
+                <tr class="information">
+                    <td colspan="2">
+                        <table class="companyDetails">
+                            <tr>
+                                <td>
+                                    RIDEZ <br />
+                                    No 197/8,<br />
+                                    Galle Road,<br />
+                                    Galle.
+                                </td>
+
+                                <td>
+                                    <br />
+                                    Created on: 2022
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <table class="bottom"> 
+                                <tr>
+                                    <td >
+                                        <img src="shop_assets/RidezLogoBlack.png" alt="Company logo" style="width: 100%; max-width: 100px" />
+                                    </td>
+                                    <td>
+                                        RIDEZ<br />
+                                        Contact Us : +94715005007<br />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <div class="userDetails">
+                        <p id="coustomerDTitile">Customer Details</p>
+                        <p id="paragraph"></p>
+                        <hr>
+                    </div>
+                    <section class="container content-section">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">ITEM</span>
+                            <span class="cart-price cart-header cart-column">PRICE</span>
+                        </div>
+                        
+                        <div id="cartItems"></div>   
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Total</strong>
+                            <span id="totalOut"></span>
+                        </div>
+                    </section>        
+                </table>
+            </div>
+        </div>        
+        <script>
+            document.getElementById("totalOut").innerHTML=localStorage.getItem("textval");
+            document.getElementById("cartItems").innerHTML=localStorage.getItem("ITEMS");
+        </script>
+        <script src="storeInvoice.js"></script>
+    </body>
+</html>

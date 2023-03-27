@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:ital@1&family=Poppins:ital,wght@1,100;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Start_button{
+	margin-top: 150px;
+    width: 200px;
+    font-size: 20px; 
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    margin-left: 800px;
+    height: 70px;
+    text-align:center;
+    border: transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #eb6289, #e44040, #dd3030, #b62b2b);
+    transition: all 0.5s ease;
+	opacity: 1;
+}
+.Start_button:hover{
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+	transform: scale(1.1);
+}
+.Start_button.activestart{
+	opacity: 0;
+	pointer-events: none;
+}
+form{
+    border: fill;
+    text-align: center;
+	width: 700px;
+    justify-content: center;
+    pointer-events: auto;
+    margin: auto;
+	font-family: 'Open Sans', sans-serif;
+	border-radius: 20px;
+}
+#QuizForm{
+	background-color:transparent;
+    backdrop-filter: blur(10px);
+	display: none;
+	color:white;
+    border: 1px solid black;
+}
+#Results{
+	display: none;
+	background-color: transparent;
+	border: 3px solid black;
+	border-radius: 50px;
+	width: 500px;
+	margin-top:50px;
+	color: white;			
+	font-size:20px;
+	padding: 25px;
+    margin: auto;
+	text-align: center;
+    transition: all 0.5s ease;
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+	text-align: center;
+	color: #fff;
+    font-weight: 600;
+	font-size:120px;
+	margin-top:100px;
+    transition: 0.5s;
+    box-shadow: 16px 4px 15px 16px rgba(49, 196, 190, 0.75);
+}
+h1:hover {
+	-webkit-text-stroke: 2px #fff;
+    color: transparent;
+    cursor: pointer;
+	transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.sumbit_button{
+    border: transparent;
+	color: white;
+	width:200px;
+	height:50px;
+	border-radius: 30px;
+	font-size: 20px;		
+	margin-top: 30px;
+	cursor: pointer;
+    margin-bottom: 30px;	
+	background-image: linear-gradient(to right, #e1ea66, #9ca24b, #d1d66b, #bfd737);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+	transition: all 0.5s ease;
+}
+.sumbit_button:hover{
+    background-image: linear-gradient(to right, #66ea96, #4ba24e, #6dd66b, #4cd737);
+	transform: scale(1.1);
+}
+.quit{
+	background-color:#21D4FD;
+	margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+	color:white;
+	opacity: 0;
+}
+.quit:hover{
+	color: #fff;
+	background: #007bff;
+	transform: scale(1.1);
+}
+.quit.activebutton{
+	opacity: 1;
+}
+.back-video{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 1;
+}
+.back-video.activevideo{
+    opacity: 0;
+}
+
+
+.footer{
+	
+	bottom: 0;
+	float: right;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#A5A5A5;
+	margin:0;
+	background-color:rgb(0, 0, 0);
+}
+.footer-content{/* footer main div css */
+	display: flex;
+	flex-direction: row;
+    margin-top: auto;
+}
+.no-bullet{
+	list-style-type:none;
+	padding-left: 0;
+}
+a{
+	text-decoration: none;
+	color: #A5A5A5;
+}
+ a:hover {/* all anchors on hover */
+	text-decoration: none;
+	color: white;
+}
+.text-left{
+	text-align: left ;
+}
+.justify-text{
+	text-align: justify;
+}
+.footer-img{
+	text-align: center;
+	width: 20%;
+}
+.footer-navigation{
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+	
+}
+.footer-about{/* about section in footer */
+	width: 45%;
+}
+.footer-contact{/* contact section in footer */
+	text-align: right;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+}
+.footer-hr{
+	color: white;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+}
+
+.page-credits{/* page credits section */
+	text-align: center;
+	margin-bottom: 0;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- title -->
+    <title>
+		RIDEZ | QUIZ
+	  </title>
+	  <!-- title image -->
+	<link rel="icon" href="Quiz_Assets/icon.png" type="image/icon type" >
+	<link rel="stylesheet" href="Quizstyle.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- All navigation bar contents -->
+    <nav>
+        <a href="../../home.html">
+        <img class= "logo" src="Quiz_Assets/RidezLogoWhite.png" alt="RIDEZLogo">
+        </a>
+            <!--menu items-->          
+            <ul>
+				<li><a href="../../home.html">HOME</a></li>
+				<li><a href="../../PresentationPage and Shop/store.html">SHOP</a></li>
+				<li><a href="../../query_form/queryForm.html" >QUERY FORM</a></li>
+				<li><a href="Quiz.html" class="selected" >QUIZ</a></li>
+				<li><a href="../../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+				<li><a href="../../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+				<li><a href="../Aboutus/Aboutus.html" >ABOUT US</a></li>
+            </ul>
+    </nav>
+    <!-- End of all navigation bar contents -->
+	<video autoplay loop muted class="back-video">
+		<source src="Quiz_Assets/Quiz_Background.mp4" type="video/mp4">
+	</video>
+	<h1>Quiz By Ridez</h1>
+	<!--Start button--> 
+	<div>
+	<input type="button" value="Let's go!" class="Start_button" onclick="start_quiz (); time_exceded(); timer(); ">
+	</div>
+	<div class="Quiz_box">
+		<form name="Quiz" id="QuizForm">
+			<h3>1.Who invented the bicycle ? </h3><br>
+				<p><input type="radio" name="q1" id="q1a" value=1><label for="q1a">A. Karl von Drais</label></p>
+				<p><input type="radio" name="q1" id="q1b" value=2><label for="q1b">B. The Wright Brothers</label></p>
+				<p><input type="radio" name="q1" id="q1c" value=3><label for="q1c">C. Alexander Graham Bell</label></p> 
+				<p><input type="radio" name="q1" id="q1d" value=4><label for="q1d">D. Nikola Tesla</label></p>
+			<hr>
+			<br>
+			<h3>2.Who was the first person to cicle the globe by bicycle ?</h3><br>
+				<p><input type="radio" name="q2" id="q2a" value=1><label for="q2a">A. Xesús Taher</label></p>
+				<p><input type="radio" name="q2" id="q2b" value=2><label for="q2b">B. Khnum Iacob</label></p>
+				<p><input type="radio" name="q2" id="q2c" value=3><label for="q2c">C. Fred A. Birchmore</label></p>
+				<p><input type="radio" name="q2" id="q2d" value=4><label for="q2d">D. Rikhard Otso</label></p>
+			<hr>
+			<br>
+			<h3>3.What is the most famous bicycle race in the world ?</h3><br>
+				<p><input type="radio" name="q3" id="q3a" value=1><label for="q3a">A. Milan-San Remo</label></p>
+				<p><input type="radio" name="q3" id="q3b" value=2><label for="q3b">B. Giro d'Italia</label></p>
+				<p><input type="radio" name="q3" id="q3c" value=3><label for="q3c">C. Amgen Tour of California</label></p>
+				<p><input type="radio" name="q3" id="q3d" value=4><label for="q3d">D. The Tour de France</label></p>
+			<hr>
+			<br>		
+			<h3>4.When did BMX become an extreme style of bicycle track racing ?</h3><br>
+				<p><input type="radio" name="q4" id="q4a" value=1><label for="q4a">A. 2010</label></p>
+				<p><input type="radio" name="q4" id="q4b" value=2><label for="q4b">B. 2008</label></p>
+				<p><input type="radio" name="q4" id="q4c" value=3><label for="q4c">C. 2005</label></p>
+				<p><input type="radio" name="q4" id="q4d" value=4><label for="q4d">D. 2007</label></p>
+			<hr>
+			<br>		
+			<h3>5.When was the first prototype of the mountain bike developed ?</h3><br>
+				<p><input type="radio" name="q5" id="q5a" value=1><label for = "q5a">A. 1977</label></p>
+				<p><input type="radio" name="q5" id="q5b" value=2><label for = "q5b">B. 1990</label></p>
+				<p><input type="radio" name="q5" id="q5c" value=3><label for = "q5c">C. 1946</label></p>
+				<p><input type="radio" name="q5" id="q5d" value=4><label for = "q5d">D. 2003</label></p>
+			<hr>
+			<br>		
+			<h3>6.Who attained the fastest speed on a bicycle ?</h3><br>
+				<p><input type="radio" name="q6" id="q6a" value=1><label for = "q6a">A. Lance Armstrong</label></p>
+				<p><input type="radio" name="q6" id="q6b" value=2><label for = "q6b">B. Tsugunobu Mitsuishi</label></p>
+				<p><input type="radio" name="q6" id="q6c" value=3><label for = "q6c">C. John Howard</label></p>
+				<p><input type="radio" name="q6" id="q6d" value=4><label for = "q6d">D. Giovanni Fontana</label></p>
+			<hr>
+			<br>		
+			<h3>7.How many Bikes does the world manufactured in a year ?</h3><br>
+				<p><input type="radio" name="q7" id="q7a" value=1><label for = "q7a">A. 100 million</label></p>
+				<p><input type="radio" name="q7" id="q7b" value=2><label for = "q7b">B. 500 milion</label></p>
+				<p><input type="radio" name="q7" id="q7c" value=3><label for = "q7c">C. 50 million</label></p>
+				<p><input type="radio" name="q7" id="q7d" value=4><label for = "q7d">D. 1 billion</label></p>
+			<hr>
+			<br>		
+			<h3>8.When was the term 'Bicycle' First used ?</h3><br>
+				<p><input type="radio" name="q8" id="q8a" value=1><label for = "q8a">A. 1960s</label></p>
+				<p><input type="radio" name="q8" id="q8b" value=2><label for = "q8b">B. 1940s</label></p>
+				<p><input type="radio" name="q8" id="q8c" value=3><label for = "q8c">C. 1860s</label></p>
+				<p><input type="radio" name="q8" id="q8d" value=4><label for = "q8d">D. 1890s</label></p>
+			<hr>
+			<br>		
+			<h3>9.how long was the world's longest bicycle ?</h3><br>
+				<p><input type="radio" name="q9" id="q9a" value=1><label for = "q9a">A. 47.5m</label></p>
+				<p><input type="radio" name="q9" id="q9b" value=2><label for = "q9b">B. 23.5m</label></p>
+				<p><input type="radio" name="q9" id="q9c" value=3><label for = "q9c">C. 55.6m</label></p>
+				<p><input type="radio" name="q9" id="q9d" value=4><label for = "q9d">D. 30.8m</label></p>
+			<hr>
+			<br>		
+			<h3>10.How long is stage 13 of the Tour de France ?</h3><br>
+				<p><input type="radio" name="q10" id="q10a" value=1><label for = "q10a">A. 112.6 km</label></p>
+				<p><input type="radio" name="q10" id="q10b" value=2><label for = "q10b">B. 192.6 km</label></p>
+				<p><input type="radio" name="q10" id="q10c" value=3><label for = "q10c">C. 156.4 km</label></p>
+				<p><input type="radio" name="q10" id="q10d" value=4><label for = "q10d">D. 97.6 km</label></p>
+				
+				<br>
+				<div>Seconds: <span id="time"></span></div>
+				<input type="button" value="Submit" class="sumbit_button" onclick="endQuiz(); stop();">	
+		</form>
+	</div>
+	<div id="Results"></div>
+	<div class="buttons">
+		<button class="quit">Retry Quiz</button>
+	</div>
+	    <!--website footer-->
+		<div class="footer">
+			<div class="footer-content">
+			  <div class="footer-img">
+				<!-- website logo in footer -->
+				<a href="homepage.html">
+				<img
+				  src="Quiz_Assets/RidezLogoWhite.png"
+				  alt="footer logo"
+				  width="58%"
+				  role="img" aria-label="link to home page"
+				  /></a>
+			  </div>
+			  <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+				<h2>Navigation</h2>
+				<!-- footer navigation -->
+				<ul class="no-bullet">
+					<li><a href="../../home.html">HOME</a></li>
+					<li><a href="../../PresentationPage and Shop/store.html">SHOP</a></li>
+					<li><a href="../../query_form/queryForm.html" >QUERY FORM</a></li>
+					<li><a href="Quiz.html"  >QUIZ</a></li>
+					<li><a href="../../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+					<li><a href="../../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+					<li><a href="../Aboutus/Aboutus.html" >ABOUT US</a></li>
+				</ul>
+			  </div>
+			  <div class="footer-about">
+				<!-- footer about area -->
+				<h2>About Us</h2>
+				<p class="justify-text">
+				  We created this website for our course work in web module.
+				  <br />
+				  This site contains information about bicycles in the world,
+				  with detailed descriptions and images which will help you to decide which
+				  bicycles suitable for you to choose.
+				  <br />
+				  Also we have some unique, quality products made all around the world
+				  for the lowest rates.
+				</p>
+			  </div>
+			  <div class="footer-contact">
+				<!-- footer contact info -->
+				<h2><strong>Contact Info</strong></h2>
+				<p>
+				  +94 783054058 <br /><br />
+				  RIDEZ <br />
+				  No 197/8, <br />
+				  Galle Road,<br />
+				  Galle.
+				</p>
+			  </div>
+			</div>
+			<hr class="footer-hr">
+			<div class="footer-content">
+			  
+			</div>
+			<hr class="footer-hr">
+			<!-- page credits-link to page editor page -->
+			<p class="page-credits">Created by <a href="../PageEditor/Pageeditor.html" >Ashail Herath</a></p>
+		  </div>
+	<script src="Quiz.js"></script>
+</body>
+</html>

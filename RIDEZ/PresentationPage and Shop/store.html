@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="icon" href="shop_assets/RidezPageIcon.png">
+        <title>
+            RIDEZ | Shop
+        </title>
+        <style>
+            
+       
+            
+        </style>
+        <link rel="stylesheet" type="text/css" href="store.css"> <!-- linking the css styling document for store page --> 
+        <link rel="stylesheet" type="text/css" href="header.css"> <!-- linking the css styling document for header of the page --> 
+        <script src="store.js" async></script>
+        <script> 
+            // Passing Values To Invoice Page
+            function passvalues()
+            {
+                var finalTotal=document.getElementsByClassName("cart-total-price")[0].innerText;
+                console.log(finalTotal);
+                localStorage.setItem("textval",finalTotal);
+                return false; 
+            }  
+        </script>
+    </head>
+    <body>
+        <a type="button" href="#top" id="back-to-top-btn" title="Go to top">^</a> <!-- creating a button to go back to the top of the page -->
+
+<!-- All Title bar contents -->
+<nav id="top">
+    <a href="../home.html">
+    <img class= "logo" src="shop_assets/RidezLogoWhite.png" alt="RIDEZLogo">
+    </a>
+        <ul>
+            <li><a href="../home.html">HOME</a></li>
+            <li><a href="store.html" class="selected">SHOP</a></li>
+            <li><a href="../query_form/queryForm.html">QUERY FORM</a></li>
+            <li><a href="../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+            <li><a href="../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+            <li><a href="../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+            <li><a href="../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+        </ul>
+        
+    </nav>
+<!-- End of the title bar -->
+
+    <video id="bgvideo" autoplay muted loop>
+        <source src="shop_assets/Store_bg_vid.mp4" type="video/mp4">
+    </video>
+    
+
+    <section class="container content-section">
+            <h2 class="section-header" id="mountain_bikes">Mountain Bikes</h2>
+            <div class="shop-items">
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">POLYGON Siskiu D5 XC Trail Full Suspension</span>
+                    <img class="shop-item-image" src="shop_assets/products/mountain1.png" alt="POLYGON Siskiu D5 XC Trail Full Suspension">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$899.99</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">NORCO Charger</span>
+                    <img class="shop-item-image" src="shop_assets/products/mountain2.png" alt="NORCO Charger">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$580.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">POLYGON Cascade 4</span>
+                    <img class="shop-item-image" src="shop_assets/products/mountain3.png" alt="POLYGON Cascade 4">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$489.99</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">POLYGON XTRADA 7</span>
+                    <img class="shop-item-image" src="shop_assets/products/mountain4.png" alt="POLYGON XTRADA 7">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$520.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header"  id="road_bikes">Road Bikes</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">GIANT Propel V2</span>
+                    <img class="shop-item-image" src="shop_assets/products/road1.png" alt="GIANT Propel V2">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1299.99</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">MIATA Japanese</span>
+                    <img class="shop-item-image" src="shop_assets/products/road2.png" alt="MIATA Japanese">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$1155.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">POLYGON Strattos S2</span>
+                    <img class="shop-item-image" src="shop_assets/products/road3.png" alt="POLYGON Strattos S2">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$980.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header" id="electric_bikes">Electric Bikes</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">TREKKING 5</span>
+                    <img class="shop-item-image" src="shop_assets/products/electric1.png" alt="TREKKING 5" >
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$2200.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header" id="items&accessories">Items & Accessories</h2>
+            <div class="shop-items">
+                
+                <div class="shop-item">
+                    <span class="shop-item-title">POC Ventral Spin Cycling Helmet</span>
+                    <img class="shop-item-image" src="shop_assets/products/item1.png" alt="POC Ventral Spin Cycling Helmet">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$55.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bicycle Lock</span>
+                    <img class="shop-item-image" src="shop_assets/products/item2.png" alt="Bicycle Lock">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bicycle Air pump</span>
+                    <img class="shop-item-image" src="shop_assets/products/item3.png" alt="Bicycle Air pump">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bicycle Bell</span>
+                    <img class="shop-item-image" src="shop_assets/products/item4.png" alt="Bicycle Bell">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.00</span>
+                    </div>
+                    <div class="shop-item-details">
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div id="mydiv1" class="cart-items">
+               
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button data-model-target="#model" class="btn btn-primary btn-purchase" type="submit">PURCHASE</button>
+        </section>
+
+       
+<!--Beginning Of User Details Form-->
+<div class="model" id="model">
+    <div class="model-header">
+        <div class="title">User Details Form</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="model-body">
+        <form  id="create-account-form" action="storeInvoice.html" method="GET">
+            <!-- USERNAME -->
+            <div class="input-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" placeholder="Name" name="Name">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- EMAIL -->
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email" name="Email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- USER ADDRESS -->
+            <div class="input-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Address" name="Address">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+            <!-- MOBILE NUMBER  -->
+            <div class="input-group">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" placeholder="Mobile Number" name="Phone">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Error Message</p>
+            </div>
+        <form action="output-Javascript-Localstorage.html" method="POST">
+            <input id="btnPopup" type="submit" value="Checkout" onclick="passvalues(),invoiceData()"/>
+            <script>
+            function invoiceData(){
+                var productsVar = document.getElementById('mydiv1').innerHTML;
+                localStorage.setItem("ITEMS",productsVar);
+                return;
+            }
+            </script>
+        </form>
+        <script src="cartFormInputValidation.js"></script>
+    </div>
+</div>
+<div id="overlay"></div>
+<!--End Of User Detail Form-->
+
+    <script src="userDetailForm.js"></script>
+        <!--website footer -->
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-img">
+            <!-- website logo in footer -->
+            <a href="../home.html">
+            <img src="shop_assets/RidezLogoWhite.png"
+              alt="footer logo"
+              width="58%"
+              role="img" aria-label="link to home page"
+              /></a>
+          </div>
+          <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+            <h2>Navigation</h2>
+            <!-- footer navigation -->
+            <ul class="no-bullet">
+                <li><a href="../home.html">HOME</a></li>
+                <li><a href="store.html">SHOP</a></li>
+                <li><a href="../query_form/queryForm.html">QUERY FORM</a></li>
+                <li><a href="../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+                <li><a href="../GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+                <li><a href="../GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+                <li><a href="../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <div class="footer-about">
+            <!-- footer about area -->
+            <h2>About Us</h2>
+            <p class="justify-text">
+              We created this website for our course work in web module.
+              <br />
+              This site contains information about bicycles in the world,
+              with detailed descriptions and images which will help you to decide which
+              bicycles suitable for you to choose.
+              <br />
+              Also we have some unique, quality products made all around the world
+              for the lowest rates.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <!-- footer contact info -->
+            <h2><strong>Contact Info</strong></h2>
+            <p>
+              +94 783054058 <br /><br />
+              RIDEZ <br />
+              No 197/8, <br />
+              Galle Road,<br />
+              Galle.
+            </p>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-content">
+          
+        </div>
+        <hr class="footer-hr">
+        <br>
+        <!-- page credits-link to page editor page -->
+        <p class="page-credits">Created by <a href="PageEditor/Pageeditor.html">Kalana Pabasara</a></p>
+      </div>
+    </body>
+</html>

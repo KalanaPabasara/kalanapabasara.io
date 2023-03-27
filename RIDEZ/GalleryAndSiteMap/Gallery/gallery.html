@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap" rel="stylesheet"  />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="./pagelayout.css" />
+    <link rel="stylesheet" type="text/css" href="./gallery.css" />
+    <!-- js links -->
+    <script  src="../Gallery/gallery.js"></script>
+    <!-- title -->
+    <title>
+      RIDEZ | GALLERY
+    </title>
+    <!-- title image -->
+    <link rel="icon" href="icon.png" type="image/icon">
+  </head>
+  <body>
+
+    <!-- All navigation bar contents -->
+    <nav>
+      <a href="../../home.html">
+      <img class= "logo" src="Logo.png" alt="RIDEZLogo">
+      </a>
+          <!--menu items-->          
+          <ul>
+              <li><a href="../../home.html">HOME</a></li>
+              <li><a href="../../PresentationPage and Shop/store.html">SHOP</a></li>
+              <li><a href="../../query_form/queryForm.html" >QUERY FORM</a></li>
+              <li><a href="../../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+              <li><a href="gallery.html" class="selected">GALLERY</a></li>
+              <li><a href="../SVG/sitemap.html">SITE MAP</a></li>
+              <li><a href="../../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+          </ul>
+    </nav>
+    <!-- End of all navigation bar contents -->
+
+    <div class="container" role="main">
+      <!-- main container -->
+      <br><br>
+      <div class="gallery">
+        <!-- gallery items -->
+        <div class="gallery-item" onclick="getImage(1)">
+          <!-- gallery item1 -->
+          <div >
+            <img class="gallery-image" src="1.png" alt="Bike 1"  width="100%" 
+               aria-label="picture of Lionel Messi from sky"  />
+          </div>
+          <div class="gallery-image-description">
+            <h3>Avanh G50
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(2)">
+          <!-- gallery item2 -->
+          <div>
+            <img class="gallery-image" src="2.png" alt="Bike 2"  width="100%" 
+              role="img" aria-label="picture of Robert Lewandowski from sky in wide angle"/>
+          </div>
+          <div class="gallery-image-description">
+            <h3>BMX AR
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(3)">
+          <!-- gallery item3 -->
+          <div>
+            <img class="gallery-image" src="3.png" alt="Bike 3"  width="100%" 
+               aria-label="picture of Kevin De Bruyne bridge while a train is moving"/>
+          </div>
+          <div class="gallery-image-description">
+            <h3>Tripo W1
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(4)">
+          <!-- gallery item4 -->
+          <div>
+            <img class="gallery-image" src= "4.png" alt="Bike 4"  width="100%" 
+              role="img" aria-label="picture of Mohamed Salahtooth with an elephant in the festive season"/>
+          </div>
+          <div class="gallery-image-description">
+            <h3>Bolt E
+            </h3>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="getImage(5)">
+          <!-- gallery item5 -->
+          <div>
+            <img class="gallery-image" src="5.png" alt="Bike 5"  width="100%" 
+               aria-label="picture of Kylian Mbappénda falls captured from the sky." />
+          </div>
+          <div class="gallery-image-description" role="article">
+            <h3>Ranger R55
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <!--form to select destination, change page colour, change font colour-->
+        <form>
+          <label>Model: </label><!-- pull down menu for destinations -->
+          <select id="destinations" onchange="CheckDestination(this.form)" class="align" 
+            aria-label="dropdown menu to select model">
+            <option value="pleaseSelect" disabled selected hidden>Select Model</option>
+            <option value="option1">Avanh G50</option>
+            <option value="option2">BMX AR</option>
+            <option value="option3">Tripo W1</option>
+            <option value="option4">Bolt E</option>
+            <option value="option5">Ranger R55</option>
+          </select>
+          <label>Background Colour:</label><!-- radio buttons to select background colours -->
+          <input  type="radio" name="colour" value="color1" id="bgColour" onClick="bgcolor(this)"/>
+          <label for="color1" aria-label="radio button to change colour">Green</label>
+          <input  type="radio" name="colour" value="color2" id="bgColour" onClick="bgcolor(this)"/>
+          <label for="color2" aria-label="radio button to change colour">Blue</label>
+          <input  type="radio" name="colour" value="color3" id="bgColour" onClick="bgcolor(this)"/>
+          <label class="align" for="color3" aria-label="radio button to change colour">Yellow</label>
+          <label >Font Colour: </label><!-- pulldown menu to select font colour -->
+          <select class="align" id="fontColor" onchange="fontcolor(this.form)" 
+            aria-label="dropdown menu to select font colour">
+            <option value="pleaseSelect" disabled selected hidden>Select Font Colour</option>
+            <option value="color1">Brown</option>
+            <option value="color2">Blue</option>
+            <option value="color3">Purple</option>
+            <option value="color4">Red</option>
+            <option value="color5">Ocean Blue</option>
+          </select>
+          <input type="reset" value="Reset" onclick="reset1()"><!-- reset colour changes and hide big image -->
+        </form>
+      </div>
+      <br>
+      <div id="gallery-display">
+        <!-- big image and description display area -->
+        <div id="bigImage-div">
+          <img id="big-image"  alt="big-image" src=""   width="85%" 
+            role="img" aria-label="bigger image of the selected image" /><!-- big image will display here -->
+        </div>
+        <div id="bigImage-description-div">
+          <p id="bigImage-description"></p>
+          <!-- image description will be here -->
+        </div>
+      </div>
+    </div>
+    <br>
+	
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-img">
+          <!-- website logo in footer -->
+          <a href="../../home.html">
+          <img
+            src="Logo.png"
+            alt="footer logo"
+            width="58%"
+            role="img" aria-label="link to home page"
+            /></a>
+        </div>
+        <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+          <h2>Navigation</h2>
+          <!-- footer navigation -->
+          <ul class="no-bullet">
+            <li><a href="../../home.html">HOME</a></li>
+            <li><a href="../../PresentationPage and Shop/store.html">SHOP</a></li>
+            <li><a href="../../query_form/queryForm.html">QUERY FORM</a></li>
+            <li><a href="../../QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="../SVG/sitemap.html">SITE MAP</a></li>
+            <li> <a href="../../QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+          </ul>
+        </div>
+        <div class="footer-about">
+          <!-- footer about area -->
+          <h2>About Us</h2>
+          <p class="justify-text">
+            We created this website for our course work in web module.
+            <br />
+            This site contains information about bicycles in the world,
+            with detailed descriptions and images which will help you to decide which
+            bicycles suitable for you to choose.
+            <br />
+            Also we have some unique, quality products made all around the world
+            for the lowest rates.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <!-- footer contact info -->
+          <h2><strong>Contact Info</strong></h2>
+          <p>
+            +94 783054058 <br /><br />
+            RIDEZ <br />
+            No 197/8, <br />
+            Galle Road,<br />
+            Galle.
+          </p>
+        </div>
+      </div>
+      <hr class="footer-hr">
+      <div class="footer-content">
+        
+      </div>
+      <hr class="footer-hr">
+      <!-- page credits-link to page editor page -->
+      <p class="page-credits">Created by <a href="../PageEditor - kosindu/Pageeditor.html" >Kosindu Tharinda</a></p>
+    </div>
+  </body>
+</html>

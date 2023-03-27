@@ -1,0 +1,140 @@
+/*page size*/
+
+body{
+	margin:0;
+	background-color: white;
+}
+
+.container{
+	margin: 0 auto;
+	padding: 0 40px;
+	
+}
+
+.main{
+	padding:0;
+	position:relative;
+}
+
+/*--------------------------------------------------------navigation bar--------------------------------------------------------------------*/
+.main-navigation-logo{
+  float: left;
+  padding: 2px 20px 0px 20px;
+  text-decoration: none;
+
+}
+h2{
+	color:white;
+}
+.main-navigation-ul {
+	font-family: 'Archivo', sans-serif;
+	padding: 0px 10px;
+	z-index:1;
+	margin: 0 auto;
+	list-style-type: none;
+	top: 0;
+	position: fixed;
+	width: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+}
+
+.main-navigation-li {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.main-navigation-li:hover:not(.active) {
+  background-color:#2377d4;
+}
+
+.active {
+  background-color: #195393;
+}
+
+
+.navigation-bar{
+	display: block;
+}
+
+/*--------------------------------------------------------------footer----------------------------------------------------------------------*/
+.footer{
+	bottom: 0;
+	float: right;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#A5A5A5;
+	margin:0;
+	background-color:rgb(0, 0, 0);
+}
+.footer-content{/* footer main div css */
+	display: flex;
+	flex-direction: row;
+}
+.no-bullet{
+	list-style-type:none;
+	padding-left: 0;
+}
+ a {
+	text-decoration: none;
+	color: #A5A5A5;
+}
+ a:hover {/* all anchors on hover */
+	text-decoration: none;
+	color: white;
+}
+.text-left{
+	text-align: left ;
+}
+.justify-text{
+	text-align: justify;
+}
+.footer-img{
+	text-align: center;
+	width: 20%;
+}
+.footer-navigation{
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+	
+}
+.footer-about{/* about section in footer */
+	width: 45%;
+}
+.footer-contact{/* contact section in footer */
+	text-align: right;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+}
+.footer-hr{
+	color: white;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+}
+.social-row{/* social media row */
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.footer-icon{/* social media icons */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.page-credits{/* page credits section */
+	text-align: center;
+	margin-bottom: 0;
+}

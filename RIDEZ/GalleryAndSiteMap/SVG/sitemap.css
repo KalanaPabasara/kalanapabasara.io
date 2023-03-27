@@ -1,0 +1,195 @@
+/* CSS for main navigation */
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+*{
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	box-sizing:border-box;
+	
+}
+
+.selected{
+	background-color: #ffffff;
+	color: black;
+}
+
+
+nav{
+	display: flex;
+	background-color: rgba(0,0,0,0.5);
+	height:95px auto;
+	width:100%;
+	overflow: hidden;
+	font-family: 'Audiowide', cursive;
+	
+}
+.logo{
+	line-height:80px;
+	padding:0 auto;
+	width:100px;
+ 	padding: 10px;
+	margin-left: 20px;
+	padding-bottom: 5px;
+}
+
+nav ul{
+	position: relative;
+    margin-top: 7px;
+	margin-right:10px;
+	margin-left: auto;
+	float: right;
+	/* left: 929.5px;
+	bottom: 73px; */
+}
+
+nav ul li{
+	display:inline-block;
+	line-height:80px;
+	margin:0 5px;
+}
+
+nav ul li a{
+    font-family : 'Audiowide';
+	color:white;
+	font-size:17px;
+	padding:10px 20px;
+	border-radius:40px;
+	font-weight:520;
+	text-transform:uppercase;
+	transition: 1s;
+}
+
+nav ul li a:hover{
+	background:#ffffff;
+	color: black;
+}
+
+/* CSS for site map */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900");
+
+.svg_sections{font-family:poppins;
+font-size:1.5em;
+fill:white;
+}
+.svg_ellipse{fill:white;color:white;stroke:url(#rectangle_color);
+stroke-width:4px;}
+
+.svg_rect{fill:url(#rectangle_color);
+stroke:white;
+stroke-width:4px;
+
+
+
+
+}
+
+.svg_lines{stroke:black;stroke-width:5px;
+
+}
+
+.svg_editors{fill:white;font-size:1.5em;}
+.sitemap{fill:black;font-size:2.5em;font-family:poppins;}
+
+
+.bd2{
+	background-image:url("Bicycle.gif");
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/* h2{color:white;text-align:center;font-family:poppins;} */
+
+
+
+
+/*--------------------------------------------------------------footer----------------------------------------------------------------------*/
+.footer{
+	float: right;
+	width: 100%;
+	font-family: 'Rubik', sans-serif;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color:#ffffff;
+	margin:0;
+	background-color:rgb(0, 0, 0);
+}
+
+
+.footer-content{/* footer main div css */
+	display: flex;
+	flex-direction: row;
+}
+.no-bullet{
+	list-style-type:none;
+	padding-left: 0;
+	
+}
+ a {
+	text-decoration: none;
+	color: #A5A5A5;
+}
+a:hover {/* all anchors on hover */
+	text-decoration: none;
+	color: white;
+}
+.text-left{
+	text-align: left ;
+}
+.justify-text{
+	text-align: justify;
+	color: #A5A5A5;
+}
+.footer-img{
+	text-align: center;
+	width: 20%;
+}
+.footer-navigation{
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 15%;
+	
+}
+.footer-about{/* about section in footer */
+	width: 40%;
+}
+.footer-contact{/* contact section in footer */
+	text-align: right;
+	margin-left: 1px;
+	margin-right: 1px;
+	width: 20%;
+}
+
+#no{
+	color: #A5A5A5;
+}
+
+
+.footer-hr{
+	color: white;
+	background-color: white;
+	height: 1px;
+	width: 100%;
+}
+.social-row{/* social media row */
+	margin-top: 1px;
+	margin-bottom: 1px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+.footer-icon{/* social media icons */
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.page-credits{/* page credits section */
+	text-align: center;
+	margin-bottom: 0;
+	color:#A5A5A5;
+}

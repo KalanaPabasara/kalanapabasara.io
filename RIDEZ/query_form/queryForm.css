@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+*{
+	font-family : 'Poppins' , sans-serif;
+	scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+body{
+    /* display: flex; */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+    /* padding: 100px; */
+}
+
+.container{
+    border: 2px solid;
+    border-color: white;
+    max-width: 600px;
+    width: 100%;
+    background-color: grey;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.3);
+}
+
+.container .title {
+    font-family : 'Audiowide';
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container .title::after{
+    content: "";
+    display: block;
+    position:relative;
+    width: 100%;
+    height: 5%;
+    top:0;
+    border: 2px solid;
+    border-color: rgb(255, 255, 255);
+    opacity: 100%;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.container .form .input-box {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container .form .input-box label{
+    width: 150px;
+    color: white;
+    margin-right: 10px;
+    font-size: 17px;
+}
+
+.container .form .input-box .user-input{
+    width: 300px;
+    outline: none;
+    border: 0px solid black;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+.container .form .input-box .query-input {
+    resize: none;
+    height: 175px;
+    width: 300px;
+    outline: none;
+    border: 0px solid black;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+.container .form .input-box .input-select{
+    position:relative;
+    height: 25px;
+}
+
+.container .form .input-box .input-select select{
+    border: 0px solid black;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.container .form .input-box .user-input:focus,
+.container .form .input-box .query-input:focus,
+.container .form .input-box .input-select select:focus{
+    border: 2px solid yellow;
+}
+
+.container .form .submit-box .button {
+    overflow: hidden;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border: 3px solid rgb(255, 255, 255);
+    background: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+}
+
+.container .form .submit-box .button:hover{
+	color:black;
+	background-color:white;
+	transform:scale(1.2);
+	transition:0.3s ease;
+}
+	
+#cinematic-main {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 80%;
+}
+
+@media (min-aspect-ratio: 16/9){
+    #cinematic-main{
+        width: 100%;
+        height:auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    #cinematic-main{
+        width: auto;
+        height:100%;
+    }
+}
+
+#RidezLogo{
+    display: flex;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 15px;
+}
+
+.container .form .query-preview h2{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.container .form .query-preview .preview{
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: auto;
+    margin-right: auto;
+    font-style: italic;
+}

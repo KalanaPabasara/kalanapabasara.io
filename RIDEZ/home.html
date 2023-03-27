@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIDEZ</title>
+
+    <!--Linking the page icon-->
+    <link rel="icon" href="home_assets/RidezPageIcon.png">
+
+    <!-- Linking the navigation bar stylesheet -->
+    <link rel="stylesheet" type="text/css" href="header.css">
+
+    <!-- Linking the home page stylesheet -->
+    <link rel="stylesheet" type="text/css" href="home.css">
+
+     <!-- Linking the home page javascript -->
+     <script defer src="./home.js"></script>
+
+    <!-- Linking the background video -->
+    <video id="bgvideo" autoplay muted loop >
+        <source src="home_assets/HomePageVid.mp4">
+    </video>
+    <!--Linking with footer stylesheet-->
+    <link rel="stylesheet"  href="footer.css">
+</head>
+<body>
+<!-- back to top button -->
+<a type="button" href="#top" id="back-to-top-btn" title="Go to top">^</a>
+
+<!-- All navigation bar contents -->
+    <nav id="top">
+    <a href="home.html">
+    <img class= "logo" src="home_assets/RidezLogoWhite.png" alt="RIDEZLogo">
+    </a>
+        <!--menu items-->          
+        <ul>
+            <li><a href="home.html" class="selected">HOME</a></li>
+            <li><a href="PresentationPage and Shop/store.html">SHOP</a></li>
+            <li><a href="query_form/queryForm.html">QUERY FORM</a></li>
+            <li><a href="QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+            <li><a href="GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+            <li><a href="GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+            <li><a href="QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+        </ul>
+    </nav>
+<!--End of all navigation bar contents-->
+    <div class="main-text">
+    <h1 id="MainText">MAKING WAYS FOR YOU</h1>
+    </div>
+    <div class="main-button">
+        <input type="button" id="explore-button" value="Explore!">
+    </div>
+    
+<!--home page sections-->
+    <section class="section-1">
+        <div class="categories-title">
+            <h1>Shop by Type</h1>
+        </div>
+        <div id="categories">
+            <div class="grid-box">
+                <a href="PresentationPage and Shop/store.html#mountain_bikes"><img src="home_assets/1.png" alt="Mountain bike" width="100%">
+                <h2>Mountain</h2></a>
+            </div>
+            <div class="grid-box">
+                <a href="PresentationPage and Shop/store.html#road_bikes"><img src="home_assets/3.png" alt="Road bike" width="100%">
+                <h2>Road</h2></a>
+            </div>
+            <div class="grid-box">
+                <a href="PresentationPage and Shop/store.html#electric_bikes"><img src="home_assets/4.png" alt="Electric bike" width="100%"></a>
+                <h2>Electric</h2>
+            </div>
+        </div>
+    </section>
+    <section class="section-2">
+        <img src="home_assets/asoggetti-HPpj2190tGs-unsplash.jpg" id="section-2-img">
+        <button id="shopnow-button" onclick="window.location.href= 'PresentationPage and Shop/store.html#items&accessories';">Shop Now!</button>
+        <div class="categories-title">
+            <h2>Premium Accessories</h2>
+        </div>
+    </section>
+    <section class="section-3">
+        <button id="viewall-button" onclick="window.location.href= 'PresentationPage and Shop/store.html';">View All ></button>
+        <div class="viewall-title">
+            <h2>Explore all products</h2>
+        </div>
+    </section>
+
+
+
+    <!-- end category section -->
+
+    <!-- ------------------------------------------------website footer----------------------------------------------- -->
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-img">
+            <!-- website logo in footer -->
+            <a href="home.html">
+            <img src="home_assets/RidezLogoWhite.png" alt="footer logo" width="55%" role="img" aria-label="link to home page"/></a>
+          </div>
+          <div class="footer-navigation text-left" role="navigation" aria-label="Main">
+            <h2>Navigation</h2>
+            <!-- footer navigation -->
+            <ul class="no-bullet">
+                <li><a href="home.html" >HOME</a></li>
+                <li><a href="PresentationPage and Shop/store.html">SHOP</a></li>
+                <li><a href="query_form/queryForm.html">QUERY FORM</a></li>
+                <li><a href="QuizAndAboutUs/Quiz/Quiz.html">QUIZ</a></li>
+                <li><a href="GalleryAndSiteMap/Gallery/gallery.html">GALLERY</a></li>
+                <li><a href="GalleryAndSiteMap/SVG/sitemap.html">SITE MAP</a></li>
+                <li><a href="QuizAndAboutUs/Aboutus/Aboutus.html">ABOUT US</a></li>
+            </ul>
+          </div>
+          <div class="footer-about">
+            <!-- footer about area -->
+            <h2>About Us</h2>
+            <p class="justify-text">
+              We created this website for our course work in web module.
+              <br/>
+              This site contains information about bicycles in the world,
+              with detailed descriptions and images which will help you to decide which
+              bicycles suitable for you to choose.
+              <br/>
+              Also we have some unique, quality products made all around the world
+              for the lowest rates.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <!-- footer contact info -->
+            <h2><strong>Contact Info</strong></h2>
+            <p>
+              +94 783054058 <br /><br />
+              RIDEZ <br />
+              No 197/8, <br />
+              Galle Road,<br />
+              Galle.
+            </p>
+          </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-content">
+        </div>
+        <hr class="footer-hr">
+        <!-- page credits-link to page editor page and additional content -->
+        <div class="additional">
+        <h3 class="additional-content" id="additional-content"><a id="additional-content" href="AditionalPage.html"> Additional Content</a></h3>
+        <p class="page-credits">Created by <a href="QuizAndAboutUs/Aboutus/Aboutus.html">The Amigos</a></p>
+        </div>
+    </div>
+</body>
+</html>
